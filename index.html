@@ -1,4 +1,4 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="مختبر العلوم الصغير — برنامج تفاعلي لعلوم الصفوف الابتدائية في مملكة البحرين. تصميم وإعداد: وائل الخزاعي"><style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>مختبر العلوم الصغير</title>
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="مختبر العلوم الصغير — برنامج تفاعلي لعلوم الصفوف الابتدائية في مملكة البحرين. تصميم وإعداد: الأستاذة مها الخزاعي"><style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style></head><body><title>مختبر العلوم الصغير</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&family=Cairo:wght@400;600;700;800&family=Almarai:wght@400;700;800&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap">
 <style>
@@ -464,7 +464,7 @@ html.calm .confetti,html.calm .kp,html.calm .kboard li{animation:none}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 /* =====================================================================
-   مختبر العلوم الصغير — تصميم وإعداد: وائل الخزاعي
+   مختبر العلوم الصغير — تصميم وإعداد: الأستاذة مها الخزاعي
    البنية: محتوى الدروس (LES) ← خدمات (DataService / ProgressService) ← واجهات.
    للتحويل إلى نسخة أونلاين: استبدل LocalAdapter بمحوّل API بالدوال نفسها.
    نماذج البيانات المستقبلية: User{id,role,name,grade} Class{id,teacherId,code,studentIds[]}
@@ -3382,9 +3382,9 @@ VIEWS.about=()=>{
   view.innerHTML=`<section class="card credit" style="max-width:46rem;margin:auto">
    ${EMBLEM_SRC?`<img src="${EMBLEM_SRC}" alt="شعار مملكة البحرين" style="width:min(10rem,40vw)">`:`<svg class="flag" viewBox="0 0 500 300" role="img" aria-label="علم مملكة البحرين"><rect width="500" height="300" fill="#CE1126"/><path d="M0 0H125L200 30L125 60L200 90L125 120L200 150L125 180L200 210L125 240L200 270L125 300H0Z" fill="#FFFFFF"/></svg>`}
    <span class="eyebrow">مملكة البحرين · وفق مناهج وزارة التربية والتعليم</span>
-   <h1>مختبر العلوم الصغير</h1><p class="muted">تصميم وإعداد</p><p class="name">وائل الخزاعي</p>
+   <h1>مختبر العلوم الصغير</h1><p class="muted">تصميم وإعداد</p><p class="name">الأستاذة مها الخزاعي</p>
    <div class="card" style="background:var(--surface-2);text-align:right;width:100%"><h3 style="margin-bottom:.4rem">حقوق الاستخدام</h3>
-    <p class="small">جميع الحقوق محفوظة © 2026 وائل الخزاعي. يُسمح باستخدام البرنامج لأغراض تعليمية غير تجارية في المدارس والمنازل. لا يجوز نسخه أو تعديله أو بيعه أو إعادة نشره دون إذن كتابي من المعد. المحتوى العلمي مبني على كتب العلوم المقررة من وزارة التربية والتعليم في مملكة البحرين، وهي المرجع الأصلي.</p></div>
+    <p class="small">جميع الحقوق محفوظة © 2026 الأستاذة مها الخزاعي. يُسمح باستخدام البرنامج لأغراض تعليمية غير تجارية في المدارس والمنازل. لا يجوز نسخه أو تعديله أو بيعه أو إعادة نشره دون إذن كتابي من المعد. المحتوى العلمي مبني على كتب العلوم المقررة من وزارة التربية والتعليم في مملكة البحرين، وهي المرجع الأصلي.</p></div>
    ${badges.length?`<div class="stack" style="justify-items:center"><span class="eyebrow">شاراتك</span><div class="row" style="justify-content:center">${badges.map(b=>`<span class="chip">${b}</span>`).join('')}</div></div>`:''}
    <p class="muted small">الإصدار 0.3 · الصفوف من الأول إلى الثالث</p></section>`;
 };
@@ -3401,7 +3401,7 @@ VIEWS.landing=()=>{document.body.classList.add('landing');onCleanup(()=>document
      <h1 class="land-title">مختبر العلوم الصغير</h1>
      <p class="land-sub">دروس تفاعلية ومجسمات وتجارب افتراضية وأدوات وألعاب، وفق منهج العلوم في مملكة البحرين.</p>
      <button class="btn land-go" data-go="home">ادخل إلى البرنامج</button>
-     <div class="land-credit"><span>تصميم وإعداد</span><b>وائل الخزاعي</b></div>
+     <div class="land-credit"><span>تصميم وإعداد</span><b>الأستاذة مها الخزاعي</b></div>
     </div>
     <div class="land-art">${LES['g1-p1-c1-l1'].cover()}</div>
    </div></section>`;
